@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Photobooth</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Confetti Container -->
+    <div id="confetti"></div>
+
+    <!-- Welcome Text -->
+    <div id="welcome-container">
+        <h1>Welcome to Virtual Photobooth!</h1>
+        <p>Take fun photos with filters and frames!</p>
+    </div>
+
+    <!-- Webcam Display -->
+    <div class="webcam-container">
+        <video id="video" autoplay></video>
+        <canvas id="canvas" style="display:none;"></canvas>
+    </div>
+
+    <!-- Filters Section -->
+    <div class="filters">
+        <button id="normalFilter">Normal</button>
+        <button id="grayscaleFilter">Grayscale</button>
+        <button id="sepiaFilter">Sepia</button>
+        <button id="invertFilter">Invert</button>
+        <button id="blurFilter">Blur</button>
+        <button id="mirrorFilter">Mirror</button>
+    </div>
+
+    <!-- Frames Section -->
+    <div class="frames">
+        <button id="frame1">Vintage</button>
+        <button id="frame2">Polaroid</button>
+    </div>
+
+    <!-- Capture Button -->
+    <div class="capture">
+        <button id="captureButton">Capture</button>
+    </div>
+
+    <!-- Preview and Download -->
+    <div id="previewContainer">
+        <img id="previewImage" />
+        <button id="downloadButton" class="hidden">Download Image</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
